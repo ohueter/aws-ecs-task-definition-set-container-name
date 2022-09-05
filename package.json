@@ -1,0 +1,37 @@
+{
+  "name": "aws-ecs-task-definition-set-container-name",
+  "version": "1.0.0",
+  "description": "Update container name in AWS ECS task definition file",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint **.js && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohueter/aws-ecs-task-definition-set-container-name.git"
+  },
+  "keywords": [
+    "AWS",
+    "ECS",
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "AWS, Ole Hüter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohueter/aws-ecs-task-definition-set-container-name/issues"
+  },
+  "homepage": "https://github.com/ohueter/aws-ecs-task-definition-set-container-name#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "tmp": "^0.2.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3"
+  }
+}

@@ -1,0 +1,21 @@
+name: 'AWS ECS "Update Container Name in Task Definition" Action for GitHub Actions'
+description: 'Updates the container name in an Amazon ECS task definition JSON file, creating a new task definition file.'
+branding:
+  icon: 'cloud'
+  color: 'purple'
+inputs:
+  task-definition:
+    description: 'The path to the ECS task definition JSON file'
+    required: true
+  container-name:
+    description: 'The current name of the container defined in the containerDefinitions section of the ECS task definition'
+    required: true
+  new-container-name:
+    description: 'The new container name to insert into the ECS task definition'
+    required: true
+outputs:
+  task-definition:
+    description: 'The path to the rendered task definition file'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
